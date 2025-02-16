@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 
 # STATUS is a tuple that will be used for the status field in the Post model
-STATUS = ((0, "Draft"), (1, "Published"))
+STATUS = ((0, "Draft"), (1, "Published")) # 0 is Draft, 1 is Published
 
 # Create your models here.
 class Post(models.Model):
