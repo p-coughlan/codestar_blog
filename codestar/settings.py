@@ -93,8 +93,8 @@ WSGI_APPLICATION = 'codestar.wsgi.application'
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
-
-CSRF_TRUSTED_ORIGINS = [ #Do I need to add my server's domain here? Answer - No, this is only for external domains
+#Do I need to add my server's domain here? Answer - No, this is only for external domains
+CSRF_TRUSTED_ORIGINS = [
     "https://*.codeinstitute-ide.net/", 
     "https://*.herokuapp.com"
 ]
